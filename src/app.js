@@ -66,8 +66,9 @@ app.get('/weather', (req, res) => {
                             forecast: forecastData.description,
                             location: forecastData.location,
                             temperature: forecastData.temperature,
+                            humidity: forecastData.humidity,
                             feelslike: forecastData.feels_like,
-                            message: `It's ${forecastData.description}. It is currently ${forecastData.temperature} degrees out. It feels like ${forecastData.feels_like} degrees out.`
+                            message: `It's ${forecastData.description}. It is currently ${forecastData.temperature} degrees out. It feels like ${forecastData.feels_like} degrees out. The humidity is ${forecastData.humidity}`
                         })
                     }
                 })

@@ -18,7 +18,6 @@ weatherForm.addEventListener('submit', (e) => {
     fetch(url).then((response) => {
         response.json().then((data) => {
             if (data.error) {
-                // console.log(data.error)
                 messageOne.textContent = data.error
             } else {
                 messageOne.textContent = data.address
